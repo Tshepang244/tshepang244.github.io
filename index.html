@@ -3,10 +3,10 @@
 <head>
     <title>Tshepang Oageng Portfolio</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
     <style>
-        /* Custom Colors */
         body {
             background-color: #f2efeb;
             color: #2d2d30;
@@ -17,8 +17,7 @@
             color: #f2efeb;
         }
 
-        #header h1,
-        #header p {
+        #header h1, #header p {
             color: #f2efeb;
         }
 
@@ -29,202 +28,180 @@
         }
 
         ul.icons li a {
-            color: #2d2d30; /* Social icons dark color */
+            color: #f2efeb;
         }
 
         ul.icons li a:hover {
-            color: #0287FE; /* Optional hover color */
+            color: #0287FE;
         }
 
-        /* Intro Video Styling */
         #top {
             position: relative;
-            overflow: hidden;
             height: 100vh;
         }
 
         .intro-video {
             position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -1; /* behind text */
+            z-index: -1;
         }
 
         #top .container {
             position: relative;
-            z-index: 1; /* text above video */
+            z-index: 1;
             text-align: center;
-            padding-top: 25vh; /* vertical positioning */
-            color: #f2efeb;
+            padding-top: 25vh;
+            color: #fff;
         }
     </style>
 </head>
+
 <body class="is-preload">
 
-    <!-- Header -->
-    <div id="header">
-        <div class="top">
-            <!-- Logo -->
-            <div id="logo">
-                <span class="image avatar48"><img src="images/avatar48.png" alt="" /></span>
-                <h1 id="title">Tshepang Oageng</h1>
-                <p>IT Service Desk Operator</p>
-            </div>
+<!-- Header -->
+<div id="header">
+    <div class="top">
 
-            <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-                    <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-                    <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-                    <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-                </ul>
-            </nav>
+        <div id="logo">
+            <span class="image avatar48"><img src="images/avatar48.png" alt="" /></span>
+            <h1 id="title">Tshepang Oageng</h1>
+            <p>IT Service Desk Operator</p>
         </div>
 
-        <div class="bottom">
-            <!-- Social Icons -->
-            <ul class="icons">
-                <li><a href="https://x.com/motshepiwa__?s=21" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/share/1CFMwHjbxK/?mibextid=wwXIfr" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="https://github.com/Tshepang244" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                <li><a href="mailto:tshepangoageng@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        <!-- ✅ NAVIGATION -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#top"><span class="icon solid fa-home">Intro</span></a></li>
+                <li><a href="#portfolio"><span class="icon solid fa-th">Portfolio</span></a></li>
+                <li><a href="#about"><span class="icon solid fa-user">About Me</span></a></li>
+
+                <!-- ✅ NEW PROJECTS -->
+                <li><a href="#projects"><span class="icon solid fa-code">Projects</span></a></li>
+
+                <li><a href="#contact"><span class="icon solid fa-envelope">Contact</span></a></li>
             </ul>
-        </div>
+        </nav>
     </div>
 
-    <!-- Main -->
-    <div id="main">
-
-        <!-- Intro -->
-        <video autoplay muted loop playsinline class="intro-video">
-    <source src="introvideo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-            <div class="container">
-                <header>
-                    <h2 class="alt">
-                        Hi! I am <strong>Tshepang Oageng</strong>, but you can call me <strong>Mr T</strong> if my name is difficult to pronounce.
-                    </h2>
-                </header>
-                <footer>
-                    <a href="#portfolio" class="button scrolly">View My Work</a>
-                </footer>
-            </div>
-        </section>
-
-        <!-- Portfolio -->
-        <section id="portfolio" class="two">
-            <div class="container">
-                <header>
-                    <h2>Portfolio</h2>
-                </header>
-                <p>I am a detail-oriented IT Support professional with hands-on experience in first-line support. Skilled in troubleshooting technical issues, providing clear guidance, and ensuring smooth user support with strong communication and organisational skills.</p>
-                <div class="row">
-                    <div class="col-4 col-12-mobile">
-                        <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-                            <header>
-                                <h3>Bike Sales Dashboard</h3>
-                            </header>
-                        </article>
-                        <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-                            <header>
-                                <h3>Data Professional Survey Breakdown</h3>
-                            </header>
-                        </article>
-                    </div>
-                    <div class="col-4 col-12-mobile">
-                        <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-                            <header>
-                                <h3>Data Cleaning in SQL</h3>
-                            </header>
-                        </article>
-                        <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-                            <header>
-                                <h3>Netflix Movies and TV Shows Dashboard</h3>
-                            </header>
-                        </article>
-                    </div>
-                    <div class="col-4 col-12-mobile">
-                        <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-                            <header>
-                                <h3>Tableau Dashboard</h3>
-                            </header>
-                        </article>
-                        <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-                            <header>
-                                <h3>Data Analyst Take Home Test</h3>
-                            </header>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Me -->
-        <section id="about" class="three">
-            <div class="container">
-                <header>
-                    <h2>About Me</h2>
-                </header>
-                <a href="#" class="image featured"><img src="images/pic08.png" alt="" /></a>
-                <p>
-                    I am a reliable and detail-oriented IT Support professional with first-line support experience. 
-                    Skilled in resolving everyday technical issues, providing clear guidance, and ensuring smooth user support. 
-                    I have strong troubleshooting, communication, and organisational skills, with a focus on delivering solutions correctly the first time.
-                </p>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="four">
-            <div class="container">
-                <header>
-                    <h2>Contact</h2>
-                </header>
-                <p>As an IT First-Line Support professional, I assist users with everyday technical issues, troubleshoot hardware and software problems, 
-                and provide clear guidance to ensure smooth operations. I collaborate with colleagues to escalate complex issues, 
-                maintain system efficiency, and contribute to a seamless IT support experience for all users. 
-                Please feel free to reach out to me for any IT support roles or opportunities.</p>
-                <form method="post" action="#">
-                    <div class="row">
-                        <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-                        <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-                        <div class="col-12"><textarea name="message" placeholder="Message"></textarea></div>
-                        <div class="col-12"><input type="submit" value="Send Message" /></div>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-    </div>
-
-    <!-- Footer -->
-    <div id="footer">
-        <ul class="copyright">
-            <li>&copy; 2025 Tshepang Oageng. All rights reserved.</li>
+    <!-- ✅ SOCIAL ICONS FIXED -->
+    <div class="bottom">
+        <ul class="icons">
+            <li><a href="https://x.com/motshepiwa__" target="_blank" class="icon brands fa-twitter"></a></li>
+            <li><a href="https://facebook.com" target="_blank" class="icon brands fa-facebook-f"></a></li>
+            <li><a href="https://github.com/Tshepang244" target="_blank" class="icon brands fa-github"></a></li>
+            <li><a href="mailto:tshepangoageng@gmail.com" class="icon solid fa-envelope"></a></li>
         </ul>
     </div>
+</div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+<!-- Main -->
+<div id="main">
+
+<!-- Intro -->
+<section id="top">
+    <video autoplay muted loop class="intro-video">
+        <source src="introvideo.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <header>
+            <h2 class="alt">
+                Hi! I am <strong>Tshepang Oageng</strong>, call me <strong>Mr T</strong>.
+            </h2>
+        </header>
+        <footer>
+            <a href="#portfolio" class="button scrolly">View My Work</a>
+        </footer>
+    </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="two">
+    <div class="container">
+        <header><h2>Portfolio</h2></header>
+        <p>IT Support professional experienced in troubleshooting and user support.</p>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="three">
+    <div class="container">
+        <header><h2>About Me</h2></header>
+        <p>
+            I am a reliable IT Support professional skilled in troubleshooting,
+            communication, and first-line support operations.
+        </p>
+    </div>
+</section>
+
+<!-- ✅ PROJECTS SECTION -->
+<section id="projects" class="two">
+    <div class="container">
+        <header><h2>Projects</h2></header>
+
+        <div class="row">
+
+            <div class="col-4 col-12-mobile">
+                <article class="item">
+                    <header>
+                        <h3>AI Receptionist</h3>
+                        <p>AI chatbot that handles customer queries and bookings.</p>
+                    </header>
+                </article>
+            </div>
+
+            <div class="col-4 col-12-mobile">
+                <article class="item">
+                    <header>
+                        <h3>IT Service Desk Dashboard</h3>
+                        <p>Tracks incidents, SLA and performance.</p>
+                    </header>
+                </article>
+            </div>
+
+            <div class="col-4 col-12-mobile">
+                <article class="item">
+                    <header>
+                        <h3>Portfolio Website</h3>
+                        <p>Personal website hosted on GitHub Pages.</p>
+                    </header>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="four">
+    <div class="container">
+        <header><h2>Contact</h2></header>
+
+        <form>
+            <div class="row">
+                <div class="col-6"><input type="text" placeholder="Name"></div>
+                <div class="col-6"><input type="text" placeholder="Email"></div>
+                <div class="col-12"><textarea placeholder="Message"></textarea></div>
+                <div class="col-12"><input type="submit" value="Send"></div>
+            </div>
+        </form>
+    </div>
+</section>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+    <ul class="copyright">
+        <li>&copy; 2026 Tshepang Oageng</li>
+    </ul>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
-
